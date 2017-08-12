@@ -1,11 +1,15 @@
 package com.tutorial.usuarios.modelo.entidad;
 
+import com.tutorial.modelo.entidad.catalogo.usuarios.Pais;
+import com.tutorial.modelo.entidad.catalogo.usuarios.Sexo;
+
 /**
- * Clase que representa la entidad datos_personales en bd.
  *
- * @author IvanAlexCR
+ * @author Sonne
  */
-public class DatosPersonales {
+public class DatosPersonales implements Entidad{
+
+    private static final long serialVersionUID = 3303477546380518433L;
 
     private Integer id;
 
@@ -13,14 +17,20 @@ public class DatosPersonales {
 
     private String apellidos;
 
-    private short edad;
+    private Integer edad;
+
+    private Sexo sexo;
+
+    private Pais pais;
 
     private String curp;
 
+    @Override
     public Integer getId() {
         return id;
     }
 
+    @Override
     public void setId(Integer id) {
         this.id = id;
     }
@@ -41,12 +51,28 @@ public class DatosPersonales {
         this.apellidos = apellidos;
     }
 
-    public short getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(short edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
+    }
+
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
+
+    public Pais getPais() {
+        return pais;
+    }
+
+    public void setPais(Pais pais) {
+        this.pais = pais;
     }
 
     public String getCurp() {

@@ -23,5 +23,4 @@ public interface Entidad extends Serializable {
      * @param id {@link Integer} el nuevo valor de la entidad.
      */
     void setId(Integer id);
-
 }
