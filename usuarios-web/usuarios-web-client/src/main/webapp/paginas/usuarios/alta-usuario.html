@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alta usuario</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="../../resources/images/favicon.ico">
+    </head>
+    <body>
+
+        <h2>Alta de usuarios</h2>
+
+        <div id="divBuscar">
+            <div class="row form-group">
+                <label for="txtUsuarioBusqueda" class="col-md-1 control-label">Usuario:</label>
+                <div class="col-md-3">
+                    <input type="text" id="txtUsuarioBusqueda" class="form-control" placeholder="Nombre del usuario" />
+                </div>
+            </div>
+
+            <div class="row text-right">
+                <input type="button" id="btnBuscar" class="btn btn-sm btn-primary" value="Buscar"/>
+            </div>
+        </div>
+
+        <div id="divAltaUsuario">
+            <form id="formAltaUsuario">
+                <h3>Datos del usuario</h3>
+
+                <div class="row form-group">
+                    <label for="usuario" class="col-md-1 control-label">Usuario:</label>
+                    <div class="col-md-3">
+                        <input type="text" id="usuario" class="form-control" />
+                    </div>
+                    <label for="password" class="col-md-1 control-label">Password:</label>
+                    <div class="col-md-3">
+                        <input type="password" id="password" class="form-control" />
+                    </div>
+                    <label for="conPassword" class="col-md-1 control-label">Confirmar password:</label>
+                    <div class="col-md-3">
+                        <input type="password" id="conPassword" class="form-control"/>
+                    </div>
+                </div>
+            </form>
+
+        </div>        
+
+        <div>
+            <script src="../../resources/js/bootstrap.min.js" type="text/javascript"></script>
+        </div>
+    </body>
+</html>
